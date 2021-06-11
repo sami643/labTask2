@@ -1,0 +1,13 @@
+.reciepe {
+     border-bottom: 2px dashed darkred;
+}
+
+#delbtn{
+   float: right;
+   background-color: red;
+}
+#editbtn{
+    float :right;
+background-color: orange;
+margin-right: 0.5%;
+}

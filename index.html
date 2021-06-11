@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./jquery-3.6.0.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./jcrud.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">  
+    <link rel="stylesheet" href="./Style.css">
+
+ 
+
+
+</head>
+<body class="container">
+    <h1>Reciepe API client</h1>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text"
+        class="form-control" name="" id="title" aria-describedby="helpId" placeholder="Recipes's title">
+      <small id="titlehelp" class="form-text text-muted">Enter title of the recipes </small>
+    </div>
+    <div class="form-group">
+      <label for="">body</label>
+      <input type="text"
+        class="form-control" name="body" id="body" aria-describedby="helpId" placeholder="detail's of recipes">
+      <small id="bodyhelp" class="form-text text-muted">Enter details</small>
+    </div>
+ <button  id = "addbtn" class="btn btn-info"> Add recipes</button>
+    <div id="recipes">
+        loading...
+    </div>
+    
+
+    <!-- Button trigger modal 
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Updatebtn">
+      Launch
+    </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="Updatebtn" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Update record</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="updatetitle"> <br>
+                    <input type="text" id="updatebody"> <br>
+                </div>
+                <div class="modal-footer">
+                    <button id="UpdateSave" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
